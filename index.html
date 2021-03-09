@@ -19,6 +19,11 @@
             body{
                 background-color: rgb(223, 32, 32);
             }
+            .top
+            {
+                width: 100%;
+                height: 4000px;
+            }
             .container{
                 width: 100%;
                 height: 4000px;
@@ -26,35 +31,54 @@
                 background-repeat: no-repeat;
                 background-position-x: center;
             }
-            .links{
-                width: 100%;
-                position: fixed;
-                display: flex;
-                flex-wrap: wrap;
-                left: -5%;
-                top: 40%;
+            .links{z-index: 11;
+                width: 440px;
+                height: 234px;
+                left: 52.5vh;
+                position: absolute;
+                bottom: -93%;
+
+            }
+            .links2{z-index: 11;
+                height: 234px;
+                width: 440px;
+                position: absolute;
+                left: 52.5vh;
+                bottom: -61%;
             }
             .links a {
-                position: relative;
-                text-align:end;
-                color: rgb(27, 20, 20);
-                text-decoration: none;
-                font-family: 'Do Hyeon', sans-serif;
-                font-weight: bold;
-                font-size: 2.8rem;
+                width: 100%;
+                height: 230px;
+                z-index: 11;
             }
             .links a:hover {
                 color: rgb(253, 253, 253);
+            }
+            @media screen and (max-width: 1024px) {
+                .links {
+                    bottom: -143.1%;
+                    left: 9vh;
+
+                }
+                .links2 {
+                    left: 9vh;
+                    bottom: -103.1%;
+                }
+
             }
         </style>
         <script>
         </script>
 	</head>
     <body>
+        <div class="top">
         <div class="links">
-            <a href="https://choi-su.github.io/car2/html/index" target="_blink">팀프로젝트1보러가기</a>
-            <a href="https://choi-su.github.io/teamproject2/" target="_blink">팀프로젝트2보러가기</a>
+            <a href="https://choi-su.github.io/teamproject2/" target="_blink"><img src="./보호소.gif" alt=""></a>
+        </div>
+        <div class="links2">
+            <a href="https://choi-su.github.io/car2/html/index" target="_blink"><img src="./차.gif" alt=""></a>
         </div>
         <div class="container"></div>
+        </div>
 	</body>
 </html>
