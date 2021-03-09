@@ -10,11 +10,14 @@
             포폴
         </title>
 		<style>
+            @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
             * {
                 margin: 0 auto;
                 box-sizing: border-box;
                 width: 100%;
-                height: auto;
+            }
+            body{
+                background-color: rgb(252, 180, 97);
             }
             .container{
                 width: 100%;
@@ -23,11 +26,35 @@
                 background-repeat: no-repeat;
                 background-position-x: center;
             }
+            .links{
+                width: 100%;
+                position: fixed;
+                display: flex;
+                flex-wrap: wrap;
+                left: -5%;
+                top: 40%;
+            }
+            .links a {
+                position: relative;
+                text-align:end;
+                color: rgb(27, 20, 20);
+                text-decoration: none;
+                font-family: 'Do Hyeon', sans-serif;
+                font-weight: bold;
+                font-size: 2.8rem;
+            }
+            .links a:hover {
+                color: rgb(253, 253, 253);
+            }
         </style>
         <script>
         </script>
 	</head>
     <body>
+        <div class="links">
+            <a href="https://choi-su.github.io/car2/html/index" target="_blink">팀프로젝트1보러가기</a>
+            <a href="https://choi-su.github.io/teamproject2/" target="_blink">팀프로젝트2보러가기</a>
+        </div>
         <div class="container"></div>
 	</body>
 </html>
